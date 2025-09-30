@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>MSM Info Tech - CCNA Course</title>
 <style>
     body { margin:0; font-family:Arial, sans-serif; background:#0a0a0a; color:white; }
@@ -48,6 +48,7 @@
     <!-- Introduction -->
     <h3>Introduction</h3>
     <div class="video-section">
+        <!-- Replace INTRO_FILE_ID with your Drive file id -->
         <iframe src="https://drive.google.com/file/d/1i9oHsJ8wn3gYjUz8b3iYbKDUivseMfql/preview" allowfullscreen></iframe>
     </div>
 
@@ -67,19 +68,62 @@
 </div>
 
 <script>
-    // Students list (case-sensitive login)
+    // Students list: 50 users (msm250201 ... msm250250)
+    // Passwords follow pattern Msm@250201 ... Msm@250250 (case-sensitive)
     const students = [
-        {id:"msm250201", password:"Msm@250201", name:"JOHN SAMUVEL"},
+        {id:"msm250201", password:"Msm@250201", name:"JOHN SAMUEL"},
         {id:"msm250202", password:"Msm@250202", name:"MURUGAN"},
-        {id:"msm250203", password:"Msm@250203", name:"RUBAN VEDHAMANI"},
-        {id:"msm250204", password:"Msm@250204", name:"VISHNU D"},
-        {id:"msm250205", password:"Msm@250205", name:"VELMURUGAN"}
-        {id:"msm250206", password:"Msm@250205", name:"BALAKARTHICK"}
-     {id:"msm250206", password:"Msm@250205", name:"STUDENT"}
-    
+        {id:"msm250203", password:"Msm@250203", name:"BALA KARTHICK"},
+        {id:"msm250204", password:"Msm@250204", name:"VELMURUGAN"},
+        {id:"msm250205", password:"Msm@250205", name:"RUBAN VEDHAMANI"},
+        {id:"msm250206", password:"Msm@250206", name:"STUDENT 6"},
+        {id:"msm250207", password:"Msm@250207", name:"STUDENT 7"},
+        {id:"msm250208", password:"Msm@250208", name:"STUDENT 8"},
+        {id:"msm250209", password:"Msm@250209", name:"STUDENT 9"},
+        {id:"msm250210", password:"Msm@250210", name:"STUDENT 10"},
+        {id:"msm250211", password:"Msm@250211", name:"STUDENT 11"},
+        {id:"msm250212", password:"Msm@250212", name:"STUDENT 12"},
+        {id:"msm250213", password:"Msm@250213", name:"STUDENT 13"},
+        {id:"msm250214", password:"Msm@250214", name:"STUDENT 14"},
+        {id:"msm250215", password:"Msm@250215", name:"STUDENT 15"},
+        {id:"msm250216", password:"Msm@250216", name:"STUDENT 16"},
+        {id:"msm250217", password:"Msm@250217", name:"STUDENT 17"},
+        {id:"msm250218", password:"Msm@250218", name:"STUDENT 18"},
+        {id:"msm250219", password:"Msm@250219", name:"STUDENT 19"},
+        {id:"msm250220", password:"Msm@250220", name:"STUDENT 20"},
+        {id:"msm250221", password:"Msm@250221", name:"STUDENT 21"},
+        {id:"msm250222", password:"Msm@250222", name:"STUDENT 22"},
+        {id:"msm250223", password:"Msm@250223", name:"STUDENT 23"},
+        {id:"msm250224", password:"Msm@250224", name:"STUDENT 24"},
+        {id:"msm250225", password:"Msm@250225", name:"STUDENT 25"},
+        {id:"msm250226", password:"Msm@250226", name:"STUDENT 26"},
+        {id:"msm250227", password:"Msm@250227", name:"STUDENT 27"},
+        {id:"msm250228", password:"Msm@250228", name:"STUDENT 28"},
+        {id:"msm250229", password:"Msm@250229", name:"STUDENT 29"},
+        {id:"msm250230", password:"Msm@250230", name:"STUDENT 30"},
+        {id:"msm250231", password:"Msm@250231", name:"STUDENT 31"},
+        {id:"msm250232", password:"Msm@250232", name:"STUDENT 32"},
+        {id:"msm250233", password:"Msm@250233", name:"STUDENT 33"},
+        {id:"msm250234", password:"Msm@250234", name:"STUDENT 34"},
+        {id:"msm250235", password:"Msm@250235", name:"STUDENT 35"},
+        {id:"msm250236", password:"Msm@250236", name:"STUDENT 36"},
+        {id:"msm250237", password:"Msm@250237", name:"STUDENT 37"},
+        {id:"msm250238", password:"Msm@250238", name:"STUDENT 38"},
+        {id:"msm250239", password:"Msm@250239", name:"STUDENT 39"},
+        {id:"msm250240", password:"Msm@250240", name:"STUDENT 40"},
+        {id:"msm250241", password:"Msm@250241", name:"STUDENT 41"},
+        {id:"msm250242", password:"Msm@250242", name:"STUDENT 42"},
+        {id:"msm250243", password:"Msm@250243", name:"STUDENT 43"},
+        {id:"msm250244", password:"Msm@250244", name:"STUDENT 44"},
+        {id:"msm250245", password:"Msm@250245", name:"STUDENT 45"},
+        {id:"msm250246", password:"Msm@250246", name:"STUDENT 46"},
+        {id:"msm250247", password:"Msm@250247", name:"STUDENT 47"},
+        {id:"msm250248", password:"Msm@250248", name:"STUDENT 48"},
+        {id:"msm250249", password:"Msm@250249", name:"STUDENT 49"},
+        {id:"msm250250", password:"Msm@250250", name:"STUDENT 50"}
     ];
 
-    // Google Drive video links (replace FILE_ID)
+    // Google Drive video links (replace FILE_ID with your actual preview file IDs)
     const courseVideos = {
         1: "https://drive.google.com/file/d/DAY1_FILE_ID/preview",
         2: "https://drive.google.com/file/d/DAY2_FILE_ID/preview",
@@ -98,12 +142,16 @@
         15: "https://drive.google.com/file/d/DAY15_FILE_ID/preview",
         16: "https://drive.google.com/file/d/DAY16_FILE_ID/preview",
         17: "https://drive.google.com/file/d/DAY17_FILE_ID/preview",
+        18: "https://drive.google.com/file/d/DAY18_FILE_ID/preview", // optional (holiday shows text anyway)
+        19: "https://drive.google.com/file/d/DAY19_FILE_ID/preview", // optional
+        20: "https://drive.google.com/file/d/DAY20_FILE_ID/preview", // optional
         21: "https://drive.google.com/file/d/DAY21_FILE_ID/preview",
         22: "https://drive.google.com/file/d/DAY22_FILE_ID/preview",
         23: "https://drive.google.com/file/d/DAY23_FILE_ID/preview",
         24: "https://drive.google.com/file/d/DAY24_FILE_ID/preview"
     };
 
+    // On load: persistent login check + disable iframe right-click
     window.onload = function(){
         const user = JSON.parse(localStorage.getItem("loggedUser"));
         if(user){
@@ -113,10 +161,13 @@
         document.querySelectorAll('iframe').forEach(frame => frame.addEventListener('contextmenu', e => e.preventDefault()));
     }
 
+    // Login function with debug-friendly exact-match (case-sensitive)
     function login(){
         const u = document.getElementById("username").value.trim();
         const p = document.getElementById("password").value.trim();
-        const student = students.find(s => s.id===u && s.password===p);
+        // debug logs (uncomment if needed)
+        // console.log("Trying login:", u, p);
+        const student = students.find(s => s.id === u && s.password === p);
         if(student){
             localStorage.setItem("loggedUser", JSON.stringify(student));
             document.getElementById("welcome-msg").innerText = `Welcome ${student.name} (${student.id})`;
@@ -140,31 +191,34 @@
         document.getElementById("login-page").classList.remove("hidden");
     }
 
+    // Setup days with daily unlock + lifetime access + Diwali holiday (Day 19 & 20)
     function setupDays(){
-        const startDate = new Date("2025-10-02"); 
+        const startDate = new Date("2025-10-02");
         const today = new Date();
         let html = "";
 
         for(let d=1; d<=24; d++){
             const unlockDate = new Date(startDate);
-            unlockDate.setDate(startDate.getDate()+d-1);
+            unlockDate.setDate(startDate.getDate() + d - 1);
 
-            // Diwali Holiday: Day 19 & 20
-            if(d===19 || d===20){
+            // Diwali Holiday: Day 19 & 20 (show animated message instead of video)
+            if(d === 19 || d === 20){
                 html += `
                     <h3>Day ${d} - Diwali Holiday 🎉</h3>
                     <div class="video-section" style="text-align:center; font-size:18px; color:yellow; animation: glow 1s infinite alternate;">
                         Diwali Holiday - Festival of Lights ✨ Happy Diwali!
                     </div>
                 `;
-                continue; 
+                continue;
             }
 
             if(today >= unlockDate){
+                // unlocked -> show iframe (lifetime access)
+                const src = courseVideos[d] || "";
                 html += `
                     <h3>Day ${d}</h3>
                     <div class="video-section">
-                        <iframe src="${courseVideos[d]}" allowfullscreen></iframe>
+                        <iframe src="${src}" allowfullscreen></iframe>
                     </div>
                 `;
             } else {
@@ -177,10 +231,12 @@
 
         document.getElementById("days-container").innerHTML = html;
 
-        // Play crackers sound if today is Diwali holiday
-        const dayIndex = Math.floor((today - startDate)/ (1000*60*60*24)) + 1;
-        if(dayIndex===19 || dayIndex===20){
-            document.getElementById("crackers-sound").play();
+        // Play crackers sound if today is Diwali holiday (day index relative to start)
+        const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
+        if(dayIndex === 19 || dayIndex === 20){
+            const snd = document.getElementById("crackers-sound");
+            // try-play safely
+            try { snd.play().catch(()=>{}); } catch(e){}
         }
     }
 
@@ -193,25 +249,34 @@
         document.getElementById("dashboard-page").classList.remove("hidden");
     }
 
+    // Simple CCNA Q&A bot
     const qa = {
         "ccna":"CCNA is Cisco Certified Network Associate, entry-level networking certification.",
         "routing":"Routing is the process of selecting paths for traffic in a network.",
         "switching":"Switching is moving data packets within the same network using MAC addresses.",
-        "osi model":"OSI Model has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, Application."
+        "osi model":"OSI Model has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, Application.",
+        "ip address":"An IP address uniquely identifies a device on a network.",
+        "subnetting":"Subnetting divides a network into smaller sub-networks for efficiency.",
+        "tcp":"TCP is Transmission Control Protocol, reliable and connection-oriented.",
+        "udp":"UDP is User Datagram Protocol, fast but connectionless.",
+        "dhcp":"DHCP automatically assigns IP addresses to devices on a network.",
+        "dns":"DNS translates domain names to IP addresses."
     };
 
     function askQuestion(){
         const input = document.getElementById("chat-input");
-        const question = input.value.toLowerCase();
+        const q = input.value || "";
+        const question = q.toLowerCase();
         let answer = "❌ Sorry, I don’t know that. Try another CCNA question.";
         for (let key in qa){
             if(question.includes(key)){ answer = qa[key]; break; }
         }
-        document.getElementById("chat-output").innerHTML += `<p><b>You:</b> ${input.value}</p>`;
-        document.getElementById("chat-output").innerHTML += `<p><b>Bot:</b> ${answer}</p>`;
-        input.value="";
+        if(q.trim() !== ""){
+            document.getElementById("chat-output").innerHTML += `<p><b>You:</b> ${q}</p>`;
+            document.getElementById("chat-output").innerHTML += `<p><b>Bot:</b> ${answer}</p>`;
+        }
+        input.value = "";
     }
 </script>
 </body>
 </html>
-
